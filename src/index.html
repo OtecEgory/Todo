@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" type="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <section>
+            <div id="todo">
+                <div class="list-filters">
+                    <ul class="filters">
+                        <li class="list-all">All</li>
+                        <li class="list-active">Active</li>
+                        <li class="list-completed">Completed</li>
+                    </ul>
+                </div>
+                <div class="todo-input">
+                    <div class="completed-all">
+                        <img src="./assets/down-arrow .svg" >
+                    </div>
+                <input 
+                    class="new-todo" 
+                    type="text"
+                    placeholder="What needs to be done?"
+                    name="value"
+                    autocomplete="off"
+                >
+                </div>
+                <ul class="todo-list">
+                    <template id="todo-item">
+                        <li>
+                            <div class="view">
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        class="toggle"
+                                    >
+                                    <span class="check-box"></span>
+                                </label>
+                                <input type="text" class="edit" autocomplete="off">
+                                <button class="destroy">+</button>
+                            </div>
+                        </li>
+                    </template>
+                </ul>
+            </div>
+        </section>
+    </body>
+<script src="./bundle.js"></script>
+</html>
